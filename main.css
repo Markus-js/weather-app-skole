@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.main-container {
+    padding: 20px 70px;
+}
+
+#current-info-container {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}

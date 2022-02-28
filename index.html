@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <!-- left -->
+      <div class="col-left">
+        <div id="current-time-info">
+          <div id="time">12:30 <span>AM</span></div>
+          <div id="date">Mandag, 28 Feb</div>
+
+          <!-- Weather-info -->
+          <div id="current-weather-info">
+            <!-- Item -->
+            <div id="current-weather-item">
+              <span>Fugtighed</span>
+              <span>12%</span>
+            </div>
+            <div id="current-weather-item">
+              <span>Tryk</span>
+              <span>450</span>
+            </div>
+            <div id="current-weather-item">
+              <span>Vindhastighed</span>
+              <span>3.4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right -->
+      <div id="col-right">
+        <section id="current-location-container">
+          <div id="time-zone">Europe/Aalborg</div>
+          <div id="cords">DK</div>
+        </section>
+      </div>
+    </main>
+
+    <section id="future-forecast-container">
+      <!-- Today -->
+      <div id="weather-today-container">
+        <div class="day">Mandag</div>
+        <img src="icon" alt="weather-icon" />
+
+        <div class="col">
+          <div class="day">Nat</div>
+          <div class="temp">Nat - 4&#176; C</div>
+          <div class="temp">Dag - 6&#176; C</div>
+        </div>
+      </div>
+      <!-- FUTURE -->
+      <div id="other-days-container">
+        <!-- Item -->
+        <div class="weather-forecast-item">
+          <div class="day">Tirsdag</div>
+          <img
+            class="w-icon"
+            src="http://openweathermap.org/img/wn/02d@2x.png"
+            alt="weather-icon"
+          />
+          <div class="temp">Nat - 4&#176; C</div>
+          <div class="temp">Dag - 6&#176; C</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
